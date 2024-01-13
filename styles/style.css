@@ -126,6 +126,7 @@ main {
 /* feature-experience style */
 .feature-experience {
   display: flex;
+  margin-bottom: 100px;
   gap: 80px;
 }
 .feature-experience-content {
@@ -190,7 +191,79 @@ main {
   font-weight: 500;
   color: #fff;
 }
+/* fact section style */
 
+.fact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+.fact-text h1 {
+  color: #131313;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.fact-text {
+  width: 60%;
+}
+.fact-box {
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  padding: 30px;
+}
+.fact-details {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-box p {
+  margin-bottom: 0;
+}
+/* sponsors style */
+.sponsors-section {
+  margin-bottom: 100px;
+}
+.sponsors-section h1 {
+  color: #131313;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.sponsors-section p {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #727272;
+}
+
+.sponsors-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.sponsors-img img {
+  width: 120px;
+  filter: grayscale(1);
+}
+footer {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: #fff4e7;
+  margin-bottom: 100px;
+  padding: 30px 0;
+}
+footer p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #727272;
+}
 /* ------------------------- */
 /* ----------------------------- */
 
@@ -225,14 +298,23 @@ main {
     flex-direction: column;
   }
   .feature-experience-content,
-  .feature-experience-img {
-    width: 100%;
-  }
-  .feature-box {
+  .feature-experience-img,
+  .feature-box,
+  .fact-text {
     width: 100%;
   }
   .experience {
     left: 0;
+  }
+  .fact-details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .sponsors-img {
+    flex-direction: column;
+  }
+  .sponsors-img img {
+    width: 50%;
   }
 }
 
@@ -261,7 +343,17 @@ main {
     left: 0;
   }
   .feature-experience-content,
-  .feature-experience-img {
+  .feature-experience-img,
+  .feature-box,
+  .fact-text {
     width: 100%;
+  }
+  .fact-details {
+    /* grid-template-columns: repeat(2, 1fr); */
+
+    gap: 10px;
+  }
+  .sponsors-img {
+    flex-direction: column;
   }
 }
